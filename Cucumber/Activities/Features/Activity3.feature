@@ -1,4 +1,4 @@
-@activity1_3
+@activity3
 Feature: Testing with Tags
 
   @SimpleAlert @SmokeTest
@@ -8,7 +8,7 @@ Feature: Testing with Tags
     Then Alert opens
     And Read the text from it and print it
     And Close the alert
-    And Close the browser
+    And Close Browser
 
   @ConfirmAlert
   Scenario: Test for Confirm Alert
@@ -17,7 +17,7 @@ Feature: Testing with Tags
     Then Alert opens
     And Read the text from it and print it
     And Close the alert with Cancel
-    And Close the browser
+    And Close Browser
 
   @PromptAlert
   Scenario: Test for Prompt Alert
@@ -27,17 +27,4 @@ Feature: Testing with Tags
     And Read the text from it and print it
     And Write a custom message in it
     And Close the alert
-    And Close the browser
-
-  Scenario Outline:
-    Given User is on the page
-    When User clicks the "<Type>" Alert button
-    Then Alert opens
-    And Read the text from it and print it
-    And Close the alert
-    And Close the browser
-  Examples:
-    | Type |
-    | Simple |
-    | Confirm |
-    | Prompt  |
+    And Close Browser

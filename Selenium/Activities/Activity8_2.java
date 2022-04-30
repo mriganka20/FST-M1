@@ -1,4 +1,4 @@
-package activities;
+package Activities;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.List;
 
-class Activity8_2 {
+public class Activity8_2 {
+    public WebDriver driver;
+
     public static void main(String[] args) {
         WebDriver driver = new FirefoxDriver();
 
